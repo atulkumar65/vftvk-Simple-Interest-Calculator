@@ -14,7 +14,8 @@ function compute()
     var years = document.getElementById("years").value;
     if(principal<=0)
     {
-        alert("Please enter a positive number as Principal Amount")
+        alert("Please enter a positive number as Principal Amount");
+        document.getElementById("principal").focus();
     } else {
         var si = principal*rate*years/100;
         var year = new Date().getFullYear()+parseInt(years);;
