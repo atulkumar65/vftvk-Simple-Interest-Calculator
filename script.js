@@ -9,12 +9,12 @@ function sliderChange(){
 
 function compute()
 {
-    p = document.getElementById("principal").value;
-    r = document.getElementById("rate").value;
-    t = document.getElementById("years").value;
-    si = p*(1+(r/100)*t) - p;
-    year = 202 + t;
+    var principal = document.getElementById("principal").value;
+    var rate = document.getElementById("rate").value;
+    var years = document.getElementById("years").value;
+    var si = principal*rate*years/100;
+    var year = new Date().getFullYear()+parseInt(years);;
 
-    document.getElementById("result").innerHTML = `If you deposit <mark>${p}</mark>,<br> at an interest of <mark>${r}%</mark>.<br> You will receive an amount of <mark>${si.toFixed()}</mark>,<br> in the year <mark>${year}</mark>`;
+    document.getElementById("result").innerHTML = `If you deposit <mark>${principal}</mark>,<br> at an interest of <mark>${rate}%</mark>.<br> You will receive an amount of <mark>${si.toFixed()}</mark>,<br> in the year <mark>${year}</mark>`;
 }
         
