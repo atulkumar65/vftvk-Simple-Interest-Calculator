@@ -1,4 +1,24 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color: black;}
+h1{color:grey;}
+
+label{
+    margin: 2em;
+}
+
+#calculator{
+    margin: auto;
+    width: 40%;
+    padding: 2em;
+    border-radius: 20px;
+    border: 10px;
+    background-color: white;
+}
+td{
+    width: 12em;
+}
+#computebutton, #result{
+    margin-left: 2.5em;
+}
+
 
 
